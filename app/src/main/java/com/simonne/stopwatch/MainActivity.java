@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 b2.animate().alpha(1).translationY(-80).setDuration(300).start();
                 b1.animate().alpha(0).setDuration(300).start();
 
+                chronometer.setBase(SystemClock.elapsedRealtime());
                 chronometer.start();
             }
         });
@@ -55,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 anchor.clearAnimation();
-
                 chronometer.setBase(SystemClock.elapsedRealtime());
                 anchor.startAnimation(anim);
             }
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                b1.animate().alpha(1).translationY(-80).setDuration(300).start();
+                b1.animate().alpha(1).translationY(120).setDuration(300).start();
                 b2.animate().alpha(0).setDuration(300).start();
                 b3.animate().alpha(0).setDuration(300).start();
                 anchor.clearAnimation();
