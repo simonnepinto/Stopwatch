@@ -22,7 +22,7 @@
     <ImageView
         android:id="@+id/anchor"
         android:layout_width="360dp"
-        android:layout_height="360dp"
+        android:layout_height="365dp"
         android:src="@drawable/icanchor"
         android:layout_marginTop="0dp"
         android:layout_marginStart="8dp"
